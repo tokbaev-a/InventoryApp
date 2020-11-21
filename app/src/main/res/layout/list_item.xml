@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+
+        <TextView
+            android:id="@+id/name_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            tools:text="NAME" />
+
+        <TextView
+            android:id="@+id/supplier_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_TextView"
+            android:paddingTop="5dp"
+            android:layout_alignBottom="@id/quantity_TextView"
+            tools:text="Supplier: " />
+
+        <TextView
+            android:id="@+id/quantity_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_ImageView"
+            tools:text="Quantity: " />
+
+        <TextView
+            android:id="@+id/price_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_toEndOf="@+id/name_TextView"
+            android:layout_toRightOf="@+id/name_TextView"
+            android:layout_alignBottom="@id/image_ImageView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="PRICE $" />
+
+        <ImageView
+            android:id="@+id/image_ImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
